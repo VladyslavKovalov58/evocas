@@ -1,7 +1,7 @@
 {
-  "name": "EVO Casino",
-  "short_name": "EVO",
-  "description": "EVO Casino – официальное казино от Banda и LeeBet.",
+  "name": "EVA Casino",
+  "short_name": "EVA",
+  "description": "EVA Casino – официальное казино от Banda и LeeBet.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#001a1a",

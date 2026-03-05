@@ -1,4 +1,4 @@
-# Netlify configuration for Evo Casino static site
+# Netlify configuration for Eva Casino static site
 
 [build]
   # no build command needed; we serve files directly from / (root)
