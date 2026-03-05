@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /api
 
-# если добавите другие разделы, можно исключить их:
-# Disallow: /admin
-
+Host: https://eva-casino-zerkalo.com
 Sitemap: https://eva-casino-zerkalo.com/sitemap.xml
