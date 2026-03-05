@@ -3,5 +3,5 @@ Allow: /
 Disallow: /admin
 Disallow: /api
 
-Host: https://eva-casino-zerkalo.com
+Host: eva-casino-zerkalo.com
 Sitemap: https://eva-casino-zerkalo.com/sitemap.xml
