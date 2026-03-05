@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="ru" id="html-root">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" id="meta-desc"
+        content="EVO Casino – официальное казино от Banda и LeeBet. Бонусы до 750FS, 150 FS за первый депозит, игровые автоматы и слоты. Регистрируйся на сайте Evo Casino!">
+    <meta name="keywords"
+        content="Evo Casino, Ево Казино, онлайн казино, игровые автоматы, слоты, бонусы, выплаты, зеркало, Banda, LeeBet, Бонусы">
+    <meta property="og:site_name" content="EVO Casino">
+    <meta property="og:title" id="meta-og-title" content="EVO Casino – Бонусы от Banda и LeeBet | Официальный сайт">
+    <meta property="og:description" id="meta-og-desc"
+        content="EVO Casino – официальное казино от Banda и LeeBet. Бонусы до 750FS, 150 FS за первый депозит, игровые автоматы и слоты. Регистрируйся на сайте Evo Casino!">
+    <meta property="og:type" content="website">
+    <title id="page-title">EVO Casino – Бонусы от Banda и LeeBet | Официальный сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-text">EVO</span>
+                <span class="logo-brand">CASINO</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item special" id="sidebarWheelBtn">
+                    <i class="icon-wheel">🎡</i>
+                    <span data-i18n="nav_wheel">Колесо Фортуны</span>
+                </a>
+                <div class="nav-group">
+                    <a href="#" class="nav-item">
+                        <i class="icon-vip">👑</i>
+                        <span data-i18n="nav_vip">ВИП</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="icon-bonus">🎁</i>
+                        <span data-i18n="nav_bonuses">Бонусы</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="icon-shop">🛒</i>
+                        <span data-i18n="nav_shop">Магаз</span>
+                    </a>
+                </div>
+
+                <div class="sidebar-label" data-i18n="label_games">Игры</div>
+                <div class="nav-group">
+                    <a href="#" class="nav-item">
+                        <i class="icon-new">🆕</i>
+                        <span data-i18n="nav_new">Новые игры</span>
+                    </a>
+                    <a href="#" class="nav-item active">
+                        <i class="icon-slots">🎰</i>
+                        <span data-i18n="nav_slots">Слоты</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="icon-live">🎥</i>
+                        <span data-i18n="nav_live">Лайв игры</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="icon-crash">🚀</i>
+                        <span data-i18n="nav_crash">Краш</span>
+                    </a>
+                </div>
+
+                <div class="sidebar-label" data-i18n="label_support">Поддержка</div>
+                <div class="nav-group">
+                    <a href="https://t.me/KolyanDed" target="_blank" class="nav-item">
+                        <i class="icon-tg">✈️</i>
+                        <span data-i18n="nav_telegram">Телеграм</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="lang-switch" id="langToggle" onclick="toggleLang()">
+                    <span class="lang-label" id="langLabel">RU</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-other" id="langOther">EN</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" data-i18n-placeholder="search_placeholder"
+                        placeholder="Поиск игр...">
+                </div>
+                <div class="auth-buttons">
+                    <a href="https://eva-casino.com/" class="btn btn-login" data-i18n="btn_login">Вход</a>
+                    <a href="https://eva-casino.com/" class="btn btn-register" data-i18n="btn_register">Регистрация</a>
+                </div>
+            </header>
+
+            <!-- Hero Banners -->
+            <section class="hero-section">
+                <div class="banners-container">
+                    <div class="hero-banner primary-banner">
+                        <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/banners/1770972167329_ea8e8e6746af5d5774cdefcb1529fae70fa58990.png"
+                            alt="Eva Casino Hero">
+                        <div class="hero-overlay">
+                            <div class="hero-content">
+                                <span class="badge" data-i18n="hero_badge1">ОФИЦИАЛЬНЫЙ ЗАПУСК</span>
+                                <h1 data-i18n-html="hero_h1">НОВОЕ КАЗИНО <span class="accent-text">EVO</span></h1>
+                                <p data-i18n="hero_sub1">ОТ СОЗДАТЕЛЕЙ BANDA И LEEBET</p>
+                                <div class="hero-actions">
+                                    <a href="https://eva-casino.com/" class="btn btn-primary"
+                                        data-i18n="btn_play">ИГРАТЬ СЕЙЧАС</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-banner secondary-banner">
+                        <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/banners/1728721451245_Welcome.png"
+                            alt="Eva Casino Welcome Bonus">
+                        <div class="hero-overlay">
+                            <div class="hero-content">
+                                <span class="badge" data-i18n="hero_badge2">ПРИВЕТСТВЕННЫЙ БОНУС</span>
+                                <h2>750 ФС</h2>
+                                <p data-i18n-html="hero_sub2">ЗА РЕГИСТРАЦИЮ В <span class="accent-text">EVO</span>
+                                    КАЗИНО</p>
+                                <div class="hero-actions">
+                                    <a href="https://eva-casino.com/" class="btn btn-primary btn-sm"
+                                        data-i18n="btn_claim">ЗАБРАТЬ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categories -->
+            <section class="categories-section">
+                <div class="categories-tabs">
+                    <button class="tab-item active" data-i18n="tab_top">Топ</button>
+                    <button class="tab-item" data-i18n="tab_slots">Слоты</button>
+                    <button class="tab-item" data-i18n="tab_new">Новые игры</button>
+                    <button class="tab-item" data-i18n="tab_live">Лайв игры</button>
+                    <button class="tab-item" data-i18n="tab_crash">Краш</button>
+                </div>
+            </section>
+
+            <!-- Games Section -->
+            <section class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title-left" data-i18n="section_top_slots">Топ Онлайн Слоты</h2>
+                    <a href="#" class="view-all" data-i18n="view_all">Смотреть все</a>
+                </div>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/The+Dog+House.png"
+                                alt="The Dog House">
+                            <div class="game-overlay">
+                                <span class="play-btn">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Zeus+vs+Hades+Gods+of+War.png"
+                                alt="Zeus vs Hades">
+                            <div class="game-overlay">
+                                <span class="play-btn">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1742814150989_Crown%20Coins.png"
+                                alt="Crown Coins">
+                            <div class="game-overlay">
+                                <span class="play-btn">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1765279808231_Burning%20Coins%2040.png"
+                                alt="Burning Coins 40">
+                            <div class="game-overlay">
+                                <span class="play-btn">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Gates+of+Olympus.png"
+                                alt="Gates of Olympus">
+                            <div class="game-overlay">
+                                <span class="play-btn">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-img">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Sweet+Bonanza.png"
+                                alt="Sweet Bonanza">
+                            <div class="game-overlay">
+                                <span class="play-btn">▶</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Live Wins Section -->
+            <section class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title-left" data-i18n="section_winning">Сейчас выигрывают</h2>
+                </div>
+                <div class="wins-ticker-wrapper">
+                    <div class="wins-ticker-track">
+                        <!-- Original items -->
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/The+Dog+House.png"
+                                class="win-game-small" alt="The Dog House">
+                            <div class="win-info">
+                                <div class="win-title">The Dog House</div>
+                                <div class="win-user">alex***</div>
+                                <div class="win-amount">1 240 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Zeus+vs+Hades+Gods+of+War.png"
+                                class="win-game-small" alt="Zeus vs Hades">
+                            <div class="win-info">
+                                <div class="win-title">Zeus vs Hades</div>
+                                <div class="win-user">Игрок 8829</div>
+                                <div class="win-amount">8 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1742814150989_Crown%20Coins.png"
+                                class="win-game-small" alt="Crown Coins">
+                            <div class="win-info">
+                                <div class="win-title">Crown Coins</div>
+                                <div class="win-user">maks***</div>
+                                <div class="win-amount">4 100 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1765279808231_Burning%20Coins%2040.png"
+                                class="win-game-small" alt="Burning Coins 40">
+                            <div class="win-info">
+                                <div class="win-title">Burning Coins 40</div>
+                                <div class="win-user">anna***</div>
+                                <div class="win-amount">2 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1771064766144_Knights%20vs%20Barbarians.png"
+                                class="win-game-small" alt="Knights vs Barbarians">
+                            <div class="win-info">
+                                <div class="win-title">Knights vs Barbarians</div>
+                                <div class="win-user">Игрок 1024</div>
+                                <div class="win-amount">12 450 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Gates+of+Olympus.png"
+                                class="win-game-small" alt="Gates of Olympus">
+                            <div class="win-info">
+                                <div class="win-title">Gates of Olympus</div>
+                                <div class="win-user">vova***</div>
+                                <div class="win-amount">31 800 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Sweet+Bonanza.png"
+                                class="win-game-small" alt="Sweet Bonanza">
+                            <div class="win-info">
+                                <div class="win-title">Sweet Bonanza</div>
+                                <div class="win-user">Игрок 3317</div>
+                                <div class="win-amount">5 670 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Wolf+Gold.png"
+                                class="win-game-small" alt="Wolf Gold">
+                            <div class="win-info">
+                                <div class="win-title">Wolf Gold</div>
+                                <div class="win-user">dima***</div>
+                                <div class="win-amount">7 200 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Big+Bass+Secrets+of+the+Golden+Lake.png"
+                                class="win-game-small" alt="Big Bass Secrets">
+                            <div class="win-info">
+                                <div class="win-title">Big Bass Secrets</div>
+                                <div class="win-user">Игрок 5502</div>
+                                <div class="win-amount">3 950 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1771064766144_Knights%20vs%20Barbarians.png"
+                                class="win-game-small" alt="Knights vs Barbarians">
+                            <div class="win-info">
+                                <div class="win-title">Knights vs Barbarians</div>
+                                <div class="win-user">kate***</div>
+                                <div class="win-amount">18 900 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/The+Dog+House.png"
+                                class="win-game-small" alt="The Dog House">
+                            <div class="win-info">
+                                <div class="win-title">The Dog House</div>
+                                <div class="win-user">serg***</div>
+                                <div class="win-amount">9 100 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Gates+of+Olympus.png"
+                                class="win-game-small" alt="Gates of Olympus">
+                            <div class="win-info">
+                                <div class="win-title">Gates of Olympus</div>
+                                <div class="win-user">Игрок 7741</div>
+                                <div class="win-amount">55 000 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1742814150989_Crown%20Coins.png"
+                                class="win-game-small" alt="Crown Coins">
+                            <div class="win-info">
+                                <div class="win-title">Crown Coins</div>
+                                <div class="win-user">olga***</div>
+                                <div class="win-amount">6 300 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Sweet+Bonanza.png"
+                                class="win-game-small" alt="Sweet Bonanza">
+                            <div class="win-info">
+                                <div class="win-title">Sweet Bonanza</div>
+                                <div class="win-user">ivan***</div>
+                                <div class="win-amount">14 750 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Zeus+vs+Hades+Gods+of+War.png"
+                                class="win-game-small" alt="Zeus vs Hades">
+                            <div class="win-info">
+                                <div class="win-title">Zeus vs Hades</div>
+                                <div class="win-user">Игрок 2290</div>
+                                <div class="win-amount">22 300 ₽</div>
+                            </div>
+                        </div>
+                        <!-- Duplicated items for seamless loop -->
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/The+Dog+House.png"
+                                class="win-game-small" alt="The Dog House">
+                            <div class="win-info">
+                                <div class="win-title">The Dog House</div>
+                                <div class="win-user">alex***</div>
+                                <div class="win-amount">1 240 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Zeus+vs+Hades+Gods+of+War.png"
+                                class="win-game-small" alt="Zeus vs Hades">
+                            <div class="win-info">
+                                <div class="win-title">Zeus vs Hades</div>
+                                <div class="win-user">Игрок 8829</div>
+                                <div class="win-amount">8 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1742814150989_Crown%20Coins.png"
+                                class="win-game-small" alt="Crown Coins">
+                            <div class="win-info">
+                                <div class="win-title">Crown Coins</div>
+                                <div class="win-user">maks***</div>
+                                <div class="win-amount">4 100 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1765279808231_Burning%20Coins%2040.png"
+                                class="win-game-small" alt="Burning Coins 40">
+                            <div class="win-info">
+                                <div class="win-title">Burning Coins 40</div>
+                                <div class="win-user">anna***</div>
+                                <div class="win-amount">2 500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1771064766144_Knights%20vs%20Barbarians.png"
+                                class="win-game-small" alt="Knights vs Barbarians">
+                            <div class="win-info">
+                                <div class="win-title">Knights vs Barbarians</div>
+                                <div class="win-user">Игрок 1024</div>
+                                <div class="win-amount">12 450 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Gates+of+Olympus.png"
+                                class="win-game-small" alt="Gates of Olympus">
+                            <div class="win-info">
+                                <div class="win-title">Gates of Olympus</div>
+                                <div class="win-user">vova***</div>
+                                <div class="win-amount">31 800 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Sweet+Bonanza.png"
+                                class="win-game-small" alt="Sweet Bonanza">
+                            <div class="win-info">
+                                <div class="win-title">Sweet Bonanza</div>
+                                <div class="win-user">Игрок 3317</div>
+                                <div class="win-amount">5 670 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Wolf+Gold.png"
+                                class="win-game-small" alt="Wolf Gold">
+                            <div class="win-info">
+                                <div class="win-title">Wolf Gold</div>
+                                <div class="win-user">dima***</div>
+                                <div class="win-amount">7 200 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Big+Bass+Secrets+of+the+Golden+Lake.png"
+                                class="win-game-small" alt="Big Bass Secrets">
+                            <div class="win-info">
+                                <div class="win-title">Big Bass Secrets</div>
+                                <div class="win-user">Игрок 5502</div>
+                                <div class="win-amount">3 950 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Gates+of+Olympus.png"
+                                class="win-game-small" alt="Gates of Olympus">
+                            <div class="win-info">
+                                <div class="win-title">Gates of Olympus</div>
+                                <div class="win-user">Игрок 7741</div>
+                                <div class="win-amount">55 000 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Sweet+Bonanza.png"
+                                class="win-game-small" alt="Sweet Bonanza">
+                            <div class="win-info">
+                                <div class="win-title">Sweet Bonanza</div>
+                                <div class="win-user">ivan***</div>
+                                <div class="win-amount">14 750 ₽</div>
+                            </div>
+                        </div>
+                        <div class="win-item">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Zeus+vs+Hades+Gods+of+War.png"
+                                class="win-game-small" alt="Zeus vs Hades">
+                            <div class="win-info">
+                                <div class="win-title">Zeus vs Hades</div>
+                                <div class="win-user">Игрок 2290</div>
+                                <div class="win-amount">22 300 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hot Games Section -->
+            <section class="section-container hot-games-section">
+                <div class="section-header hot-header">
+                    <h2 class="section-title-left" data-i18n="section_hot">Горячие игры</h2>
+                    <div class="hot-nav">
+                        <button class="nav-btn">&lt;</button>
+                        <button class="nav-btn">&gt;</button>
+                    </div>
+                </div>
+                <div class="hot-games-grid">
+                    <!-- Card 1 -->
+                    <div class="hot-card">
+                        <div class="hot-card-main">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Gates+of+Olympus.png"
+                                alt="Gates of Olympus" class="hot-card-img"
+                                onerror="this.src='https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/The+Dog+House.png'">
+                            <div class="hot-card-info">
+                                <div class="hot-card-title">Gates of Olympus</div>
+                                <div class="hot-card-provider">Pragmatic Play</div>
+                            </div>
+                        </div>
+                        <div class="hot-card-rtp">🔥 RTP: 1194.42%</div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="hot-card">
+                        <div class="hot-card-main">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Sweet+Bonanza.png"
+                                alt="Sweet Bonanza" class="hot-card-img"
+                                onerror="this.src='https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Zeus+vs+Hades+Gods+of+War.png'">
+                            <div class="hot-card-info">
+                                <div class="hot-card-title">Sweet Bonanza</div>
+                                <div class="hot-card-provider">Pragmatic Play</div>
+                            </div>
+                        </div>
+                        <div class="hot-card-rtp">🔥 RTP: 392.27%</div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="hot-card">
+                        <div class="hot-card-main">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/relax/Money+Train+3.png"
+                                alt="Money Train 3" class="hot-card-img"
+                                onerror="this.src='https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1742814150989_Crown%20Coins.png'">
+                            <div class="hot-card-info">
+                                <div class="hot-card-title">Money Train 3</div>
+                                <div class="hot-card-provider">Relax Gaming</div>
+                            </div>
+                        </div>
+                        <div class="hot-card-rtp">🔥 RTP: 374.35%</div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="hot-card">
+                        <div class="hot-card-main">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1742814150989_Crown%20Coins.png"
+                                alt="Crown Coins" class="hot-card-img"
+                                onerror="this.src='https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Zeus+vs+Hades+Gods+of+War.png'">
+                            <div class="hot-card-info">
+                                <div class="hot-card-title">Crown Coins</div>
+                                <div class="hot-card-provider">Fugaso</div>
+                            </div>
+                        </div>
+                        <div class="hot-card-rtp">🔥 RTP: 217.25%</div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="hot-card">
+                        <div class="hot-card-main">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/The+Dog+House.png"
+                                alt="The Dog House" class="hot-card-img"
+                                onerror="this.src='https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Gates+of+Olympus.png'">
+                            <div class="hot-card-info">
+                                <div class="hot-card-title">The Dog House</div>
+                                <div class="hot-card-provider">Pragmatic Play</div>
+                            </div>
+                        </div>
+                        <div class="hot-card-rtp">🔥 RTP: 129.82%</div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="hot-card">
+                        <div class="hot-card-main">
+                            <img src="https://banda-prod-backend-client-bucket.s3.eu-central-1.amazonaws.com/image/1765279808231_Burning%20Coins%2040.png"
+                                alt="Burning Coins 40" class="hot-card-img"
+                                onerror="this.src='https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Gates+of+Olympus.png'">
+                            <div class="hot-card-info">
+                                <div class="hot-card-title">Burning Coins 40</div>
+                                <div class="hot-card-provider">Amatic</div>
+                            </div>
+                        </div>
+                        <div class="hot-card-rtp">🔥 RTP: 129.16%</div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="hot-card">
+                        <div class="hot-card-main">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Zeus+vs+Hades+Gods+of+War.png"
+                                alt="Zeus vs Hades" class="hot-card-img"
+                                onerror="this.src='https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/The+Dog+House.png'">
+                            <div class="hot-card-info">
+                                <div class="hot-card-title">Zeus vs Hades</div>
+                                <div class="hot-card-provider">Pragmatic Play</div>
+                            </div>
+                        </div>
+                        <div class="hot-card-rtp">🔥 RTP: 129.06%</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="hot-card">
+                        <div class="hot-card-main">
+                            <img src="https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/Wolf+Gold.png"
+                                alt="Wolf Gold" class="hot-card-img"
+                                onerror="this.src='https://banda-prod-client.s3.eu-central-1.amazonaws.com/slots/pragmatic/The+Dog+House.png'">
+                            <div class="hot-card-info">
+                                <div class="hot-card-title">Wolf Gold</div>
+                                <div class="hot-card-provider">Pragmatic Play</div>
+                            </div>
+                        </div>
+                        <div class="hot-card-rtp">🔥 RTP: 128.6%</div>
+                    </div>
+                </div>
+            </section>
+            <section class="features-section">
+                <h2 class="section-title" data-i18n="feat_title">Преимущества EVA казино</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">%</div>
+                        <div class="feature-info">
+                            <h3 data-i18n="feat1_h">7% еженедельно</h3>
+                            <p data-i18n="feat1_p">Кэшбэк для всех игроков каждую неделю без исключений.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎁</div>
+                        <div class="feature-info">
+                            <h3 data-i18n="feat2_h">Регулярные лотереи</h3>
+                            <p data-i18n="feat2_p">Розыгрыши техники Apple, автомобилей и денежных призов.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-info">
+                            <h3 data-i18n="feat3_h">Быстрые выплаты</h3>
+                            <p data-i18n="feat3_p">Крипта до 15 минут, остальные методы до 60 минут.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <div class="feature-info">
+                            <h3 data-i18n="feat4_h">Без верификации</h3>
+                            <p data-i18n="feat4_p">Депозиты и выводы без лишних проверок для вашего комфорта.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎰</div>
+                        <div class="feature-info">
+                            <h3 data-i18n="feat5_h">10000+ слотов</h3>
+                            <p data-i18n="feat5_p">Только лицензионные провайдеры и высокий RTP.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💎</div>
+                        <div class="feature-info">
+                            <h3 data-i18n="feat6_h">Ежедневные бонусы</h3>
+                            <p data-i18n="feat6_p">Получайте подарки за каждый вход в казино Evo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEO Content Section -->
+            <section class="seo-section" id="seo-block">
+                <h2 data-i18n="seo_h2">Evo Casino — Новый проект от создателей Banda и Leebet</h2>
+                <p data-i18n-html="seo_p1">Выход <strong>Evo Casino (Ево Казино)</strong> — это самое ожидаемое событие
+                    в мире гемблинга.
+                    Основываясь на успехе таких гигантов как <strong>Banda Casino</strong> и <strong>Leebet</strong>,
+                    наша команда создает продукт, который превзойдет все ожидания.</p>
+                <p data-i18n="seo_p2">Почему игроки выбирают проекты нашей сети? Все просто: мы гарантируем честность,
+                    невероятную скорость
+                    обработки заявок на вывод средств и самую щедрую бонусную политику. В Evo Casino вас ждут
+                    эксклюзивные слоты, живое казино с профессиональными дилерами и уникальная система достижений.</p>
+                <p data-i18n-html="seo_p3"><strong>Banda</strong> и <strong>Leebet</strong> уже зарекомендовали себя как
+                    надежные партнеры.
+                    Теперь пришло время Евы. Мы сохранили лучшие традиции: <strong>7% кэшбэк</strong>,
+                    <strong>отсутствие верификации</strong> при выплатах и <strong>круглосуточную поддержку</strong>,
+                    готовую помочь в любую секунду.
+                </p>
+                <p data-i18n="seo_p4">Присоединяйтесь к сообществу Eva Casino и станьте частью новой легенды. Следите за
+                    таймером запуска и
+                    готовьтесь к крупным заносам!</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Wheel of Fortune Modal -->
+    <div id="wheelModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="wheelContainer">
+                <div class="wheel-main-title" data-i18n="wheel_title">ВЫИГРАЙ БОНУС!</div>
+                <div class="wheel-wrapper">
+                    <canvas id="wheelCanvas" width="400" height="400"></canvas>
+                    <div id="spinBtn" data-i18n="wheel_spin">КРУТИ</div>
+                    <div class="wheel-pointer"></div>
+                </div>
+            </div>
+            <div id="winContent"
+                style="display: none; flex-direction: column; align-items: center; text-align: center; padding: 2rem;">
+                <div class="win-title" data-i18n="wheel_won">ТЫ ВЫИГРАЛ !</div>
+                <div class="win-bonus-text" data-i18n="wheel_bonus_text">Бонус на первый депозит</div>
+                <div class="win-result" id="winResult">150 FS</div>
+                <p class="win-desc" data-i18n="wheel_desc">Ваш бонус готов к активации. Нажмите кнопку ниже, чтобы
+                    забрать его в личном
+                    кабинете.</p>
+                <a href="https://eva-casino.com/" class="btn btn-primary btn-win-activate"
+                    data-i18n="btn_activate">АКТИВИРОВАТЬ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Required Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content auth-modal-content">
+            <span class="close-auth-modal">&times;</span>
+            <div class="auth-modal-body">
+                <div class="auth-modal-icon">🔒</div>
+                <h3 class="auth-modal-title" data-i18n="auth_title">Доступ закрыт</h3>
+                <p class="auth-modal-text" data-i18n="auth_text">Чтобы увидеть все наши крутые функции, нужно
+                    зарегистрироваться или войти в свой аккаунт.</p>
+                <div class="auth-modal-buttons">
+                    <a href="https://eva-casino.com/" class="btn btn-login" data-i18n="btn_login">Вход</a>
+                    <a href="https://eva-casino.com/" class="btn btn-register" data-i18n="btn_register">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Wheel Trigger -->
+    <div id="wheelTrigger" class="floating-wheel-btn">
+        <div class="spin-icon-wrapper">
+            <div class="spin-icon-inner">🎡</div>
+        </div>
+        <span class="spin-btn-label" data-i18n="float_spin">СУПЕР СПИН</span>
+    </div>
+
+    <!-- Language System -->
+    <script>
+        const translations = {
+            ru: {
+                nav_wheel: 'Колесо Фортуны', nav_vip: 'ВИП', nav_bonuses: 'Бонусы', nav_shop: 'Магаз',
+                label_games: 'Игры', nav_new: 'Новые игры', nav_slots: 'Слоты', nav_live: 'Лайв игры',
+                nav_crash: 'Краш', label_support: 'Поддержка', nav_telegram: 'Телеграм', nav_affiliate: 'Партнерка',
+                search_placeholder: 'Поиск игр...',
+                btn_login: 'Вход', btn_register: 'Регистрация', btn_play: 'ИГРАТЬ СЕЙЧАС', btn_claim: 'ЗАБРАТЬ',
+                btn_activate: 'АКТИВИРОВАТЬ',
+                hero_badge1: 'ОФИЦИАЛЬНЫЙ ЗАПУСК', hero_h1: 'НОВОЕ КАЗИНО <span class="accent-text">EVO</span>',
+                hero_sub1: 'ОТ СОЗДАТЕЛЕЙ BANDA И LEEBET',
+                hero_badge2: 'ПРИВЕТСТВЕННЫЙ БОНУС',
+                hero_sub2: 'ЗА РЕГИСТРАЦИЮ В <span class="accent-text">EVO</span> КАЗИНО',
+                tab_top: 'Топ', tab_slots: 'Слоты', tab_new: 'Новые игры', tab_live: 'Лайв игры', tab_crash: 'Краш',
+                section_top_slots: 'Топ Онлайн Слоты', view_all: 'Смотреть все',
+                section_winning: 'Сейчас выигрывают', section_hot: 'Горячие игры',
+                feat_title: 'Преимущества EVA казино',
+                feat1_h: '7% еженедельно', feat1_p: 'Кэшбэк для всех игроков каждую неделю без исключений.',
+                feat2_h: 'Регулярные лотереи', feat2_p: 'Розыгрыши техники Apple, автомобилей и денежных призов.',
+                feat3_h: 'Быстрые выплаты', feat3_p: 'Крипта до 15 минут, остальные методы до 60 минут.',
+                feat4_h: 'Без верификации', feat4_p: 'Депозиты и выводы без лишних проверок для вашего комфорта.',
+                feat5_h: '10000+ слотов', feat5_p: 'Только лицензионные провайдеры и высокий RTP.',
+                feat6_h: 'Ежедневные бонусы', feat6_p: 'Получайте подарки за каждый вход в казино Evo.',
+                seo_h2: 'Evo Casino — Новый проект от создателей Banda и Leebet',
+                seo_p1: 'Выход <strong>Evo Casino (Ево Казино)</strong> — это самое ожидаемое событие в мире гемблинга. Основываясь на успехе таких гигантов как <strong>Banda Casino</strong> и <strong>Leebet</strong>, наша команда создает продукт, который превзойдет все ожидания.',
+                seo_p2: 'Почему игроки выбирают проекты нашей сети? Все просто: мы гарантируем честность, невероятную скорость обработки заявок на вывод средств и самую щедрую бонусную политику. В Evo Casino вас ждут эксклюзивные слоты, живое казино с профессиональными дилерами и уникальная система достижений.',
+                seo_p3: '<strong>Banda</strong> и <strong>Leebet</strong> уже зарекомендовали себя как надежные партнеры. Теперь пришло время Евы. Мы сохранили лучшие традиции: <strong>7% кэшбэк</strong>, <strong>отсутствие верификации</strong> при выплатах и <strong>круглосуточную поддержку</strong>, готовую помочь в любую секунду.',
+                seo_p4: 'Присоединяйтесь к сообществу Eva Casino и станьте частью новой легенды. Следите за таймером запуска и готовьтесь к крупным заносам!',
+                wheel_title: 'ВЫИГРАЙ БОНУС!', wheel_spin: 'КРУТИ', wheel_won: 'ТЫ ВЫИГРАЛ !',
+                wheel_bonus_text: 'Бонус на первый депозит',
+                wheel_desc: 'Ваш бонус готов к активации. Нажмите кнопку ниже, чтобы забрать его в личном кабинете.',
+                auth_title: 'Доступ закрыт',
+                auth_text: 'Чтобы увидеть все наши крутые функции, нужно зарегистрироваться или войти в свой аккаунт.',
+                float_spin: 'СУПЕР СПИН',
+                page_title: 'Официальный сайт EVO Casino',
+                meta_desc: 'Официальный сайт Evo Casino ➤ Регистрация ⚡ Бонус до 750FS. Новое зеркало! Дарим 150 FS за первый депозит в казино EVO.',
+            },
+            en: {
+                nav_wheel: 'Fortune Wheel', nav_vip: 'VIP', nav_bonuses: 'Bonuses', nav_shop: 'Shop',
+                label_games: 'Games', nav_new: 'New Games', nav_slots: 'Slots', nav_live: 'Live Games',
+                nav_crash: 'Crash', label_support: 'Support', nav_telegram: 'Telegram', nav_affiliate: 'Affiliate',
+                search_placeholder: 'Search games...',
+                btn_login: 'Sign In', btn_register: 'Register', btn_play: 'PLAY NOW', btn_claim: 'CLAIM',
+                btn_activate: 'ACTIVATE',
+                hero_badge1: 'OFFICIAL LAUNCH', hero_h1: 'NEW CASINO <span class="accent-text">EVO</span>',
+                hero_sub1: 'FROM THE CREATORS OF BANDA AND LEEBET',
+                hero_badge2: 'WELCOME BONUS',
+                hero_sub2: 'FOR JOINING <span class="accent-text">EVO</span> CASINO',
+                tab_top: 'Top', tab_slots: 'Slots', tab_new: 'New Games', tab_live: 'Live Games', tab_crash: 'Crash',
+                section_top_slots: 'Top Online Slots', view_all: 'View all',
+                section_winning: 'Now Winning', section_hot: 'Hot Games',
+                feat_title: 'EVO Casino Advantages',
+                feat1_h: '7% Weekly', feat1_p: 'Cashback for all players every week without exceptions.',
+                feat2_h: 'Regular Lotteries', feat2_p: 'Giveaways of Apple gadgets, cars and cash prizes.',
+                feat3_h: 'Fast Payouts', feat3_p: 'Crypto within 15 minutes, other methods within 60 minutes.',
+                feat4_h: 'No Verification', feat4_p: 'Deposits and withdrawals without extra checks for your comfort.',
+                feat5_h: '10,000+ Slots', feat5_p: 'Licensed providers only with high RTP.',
+                feat6_h: 'Daily Bonuses', feat6_p: 'Get gifts for every login to Evo Casino.',
+                seo_h2: 'Evo Casino — New Project from the Creators of Banda and Leebet',
+                seo_p1: 'The launch of <strong>Evo Casino</strong> is the most anticipated event in the gambling world. Building on the success of giants like <strong>Banda Casino</strong> and <strong>Leebet</strong>, our team is creating a product that will exceed all expectations.',
+                seo_p2: 'Why do players choose our network projects? Simple: we guarantee fairness, incredible speed in processing withdrawal requests and the most generous bonus policy. At Evo Casino you will find exclusive slots, a live casino with professional dealers and a unique achievement system.',
+                seo_p3: '<strong>Banda</strong> and <strong>Leebet</strong> have already proven themselves as reliable partners. Now it\'s time for Eva. We have kept the best traditions: <strong>7% cashback</strong>, <strong>no verification</strong> on payouts and <strong>24/7 support</strong>, ready to help at any moment.',
+                seo_p4: 'Join the Eva Casino community and become part of a new legend. Watch the launch timer and get ready for big wins!',
+                wheel_title: 'WIN A BONUS!', wheel_spin: 'SPIN', wheel_won: 'YOU WON!',
+                wheel_bonus_text: 'First deposit bonus',
+                wheel_desc: 'Your bonus is ready to activate. Click the button below to claim it in your account.',
+                auth_title: 'Access Restricted',
+                auth_text: 'To access all our great features, you need to register or sign in to your account.',
+                float_spin: 'SUPER SPIN',
+                page_title: 'EVO Casino — Official Website',
+                meta_desc: 'EVO Casino Official Site ➤ Register ⚡ Bonus up to 750 Free Spins. New mirror! Get 150 FS on your first deposit at EVO Casino.',
+            }
+        };
+
+        let currentLang = localStorage.getItem('evoCasinoLang') || 'ru';
+
+        function applyLang(lang) {
+            const t = translations[lang];
+            // plain text elements
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key] !== undefined) el.textContent = t[key];
+            });
+            // innerHTML elements (with HTML tags)
+            document.querySelectorAll('[data-i18n-html]').forEach(el => {
+                const key = el.getAttribute('data-i18n-html');
+                if (t[key] !== undefined) el.innerHTML = t[key];
+            });
+            // placeholder attributes
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (t[key] !== undefined) el.placeholder = t[key];
+            });
+            // page title & meta
+            if (t.page_title) document.title = t.page_title;
+            const metaDesc = document.getElementById('meta-desc');
+            if (metaDesc && t.meta_desc) metaDesc.setAttribute('content', t.meta_desc);
+            // html lang attr
+            document.getElementById('html-root').lang = lang;
+            // update toggle button
+            const isRu = lang === 'ru';
+            document.getElementById('langLabel').textContent = isRu ? 'RU' : 'EN';
+            document.getElementById('langOther').textContent = isRu ? 'EN' : 'RU';
+            const mob = document.getElementById('mobileLangLabel');
+            if (mob) mob.textContent = isRu ? 'RU' : 'EN';
+        }
+
+        function toggleLang() {
+            currentLang = currentLang === 'ru' ? 'en' : 'ru';
+            localStorage.setItem('evoCasinoLang', currentLang);
+            applyLang(currentLang);
+        }
+
+        // Apply on page load
+        applyLang(currentLang);
+    </script>
+
+    <script>
+        const canvas = document.getElementById('wheelCanvas');
+        const ctx = canvas.getContext('2d');
+        const spinBtn = document.getElementById('spinBtn');
+        const wheelModal = document.getElementById('wheelModal');
+        const wheelTrigger = document.getElementById('wheelTrigger');
+        const closeModal = document.querySelector('.close-modal');
+        const wheelContainer = document.getElementById('wheelContainer');
+        const winContent = document.getElementById('winContent');
+        const winResultText = document.getElementById('winResult');
+
+        const segments = ["150 FS", "50%", "100 FS", "25 FS", "50 FS", "100%", "Jackpot", "150%"];
+        const colors = ["#002b2b", "#003d3d", "#002b2b", "#003d3d", "#002b2b", "#00bdaa", "#002b2b", "#003d3d"];
+
+        let currentRotation = 0;
+        let isSpinning = false;
+
+        function drawWheel() {
+            const size = canvas.width;
+            const center = size / 2;
+            const radius = center - 10;
+            const sliceAngle = (2 * Math.PI) / segments.length;
+
+            ctx.clearRect(0, 0, size, size);
+
+            segments.forEach((segment, i) => {
+                const startAngle = i * sliceAngle + currentRotation;
+                const endAngle = startAngle + sliceAngle;
+
+                ctx.beginPath();
+                ctx.moveTo(center, center);
+                ctx.arc(center, center, radius, startAngle, endAngle);
+                ctx.fillStyle = colors[i];
+                ctx.fill();
+                ctx.strokeStyle = "rgba(212, 175, 55, 0.4)";
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                ctx.save();
+                ctx.translate(center, center);
+                ctx.rotate(startAngle + sliceAngle / 2);
+                ctx.textAlign = "right";
+                ctx.fillStyle = i === 6 ? "#d4af37" : "#fff";
+                ctx.font = "bold 18px Jost";
+                ctx.fillText(segment, radius - 30, 8);
+                ctx.restore();
+            });
+
+            ctx.beginPath();
+            ctx.arc(center, center, radius, 0, 2 * Math.PI);
+            ctx.strokeStyle = "#d4af37";
+            ctx.lineWidth = 8;
+            ctx.stroke();
+        }
+
+        function spinTo(index) {
+            if (isSpinning) return;
+            isSpinning = true;
+
+            const sliceAngle = (2 * Math.PI) / segments.length;
+            const minSpins = 6;
+
+            // To land exactly at the top pointer, we calculate the rotation so the CENTER of the chosen slice lands on top.
+            const targetRotation = (minSpins * 2 * Math.PI) - (index * sliceAngle) - (Math.PI / 2) - (sliceAngle / 2);
+
+            const duration = 5000;
+            const startTime = performance.now();
+
+            function animate(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeOut = 1 - Math.pow(1 - progress, 4);
+
+                currentRotation = targetRotation * easeOut;
+                drawWheel();
+
+                if (progress < 1) { requestAnimationFrame(animate); } else {
+                    isSpinning = false; setTimeout(() => {
+                        wheelContainer.style.display = 'none';
+                        winContent.style.display = 'flex';
+                        winResultText.innerText = segments[index];
+                    }, 1000);
+                }
+            }
+            requestAnimationFrame(animate);
+        }
+
+        spinBtn.addEventListener('click', () => {
+            const target = 0; // 0 is 150 FS
+            spinTo(target);
+        });
+
+        const sidebarWheelBtn = document.getElementById('sidebarWheelBtn');
+
+        [wheelTrigger, sidebarWheelBtn].forEach(btn => {
+            if (btn) {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    wheelModal.style.display = 'block';
+                    drawWheel();
+                });
+            }
+        });
+
+        closeModal.onclick = () => {
+            wheelModal.style.display = 'none';
+        };
+
+        const authModal = document.getElementById('authModal');
+        const closeAuthModal = document.querySelector('.close-auth-modal');
+
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const spanEl = item.querySelector('span[data-i18n]');
+                const key = spanEl ? spanEl.getAttribute('data-i18n') : '';
+                const isWheel = item.id === 'sidebarWheelBtn';
+                const isTelegram = item.href && item.href.includes('t.me');
+                const isSlots = key === 'nav_slots';
+
+                if (!isWheel && !isTelegram && !isSlots) {
+                    e.preventDefault();
+                    authModal.style.display = 'flex';
+                }
+            });
+        });
+
+        closeAuthModal.onclick = () => {
+            authModal.style.display = 'none';
+        };
+
+        window.onclick = (e) => {
+            if (e.target == wheelModal) wheelModal.style.display = 'none';
+            if (e.target == authModal) authModal.style.display = 'none';
+        };
+
+        setTimeout(() => wheelTrigger.style.opacity = '1', 500);
+
+        drawWheel();
+    </script>
+
+    <!-- Mobile Bottom Navigation (visible on mobile only) -->
+    <nav class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-item active" id="mobileWheelBtn"
+            onclick="document.getElementById('wheelModal').style.display='block'; drawWheel();">
+            <span class="mob-icon">🎡</span>
+            <span data-i18n="nav_wheel">Колесо</span>
+        </button>
+        <button class="mobile-nav-item" onclick="document.getElementById('authModal').style.display='flex';">
+            <span class="mob-icon">🎰</span>
+            <span data-i18n="nav_slots">Слоты</span>
+        </button>
+        <button class="mobile-nav-item" onclick="document.getElementById('authModal').style.display='flex';">
+            <span class="mob-icon">🎥</span>
+            <span data-i18n="nav_live">Лайв</span>
+        </button>
+        <button class="mobile-nav-item" onclick="document.getElementById('authModal').style.display='flex';">
+            <span class="mob-icon">🎁</span>
+            <span data-i18n="nav_bonuses">Бонусы</span>
+        </button>
+        <button class="mobile-nav-item" onclick="toggleLang()">
+            <span class="mob-icon">🌐</span>
+            <span id="mobileLangLabel">RU</span>
+        </button>
+    </nav>
+
+</body>
+
+</html>

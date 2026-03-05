@@ -1,0 +1,16 @@
+# Netlify configuration for Evo Casino static site
+
+[build]
+  # no build command needed; we serve files directly from / (root)
+  publish = "."
+
+# Redirects or headers can be added here if necessary
+# For example, to redirect all 404s to index.html for SPA behavior:
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+
+[context.production.environment]
+  # you can add environment variables here if needed
+  NODE_ENV = "production"
