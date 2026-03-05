@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# если добавите другие разделы, можно исключить их:
+# Disallow: /admin
+
+Sitemap: https://eva-casino-zerkalo.com/sitemap.xml
