@@ -124,9 +124,9 @@
                         placeholder="Поиск игр...">
                 </div>
                 <div class="auth-buttons">
-                    <a href="https://send.me2mad.com/affiliate/m_ps5to0n3?path=%2Fregistration" class="btn btn-login"
+                    <a href="https://gameshowrlight.com/d0idoecrk" class="btn btn-login promo-trigger"
                         data-i18n="btn_login">Вход</a>
-                    <a href="https://send.me2mad.com/affiliate/m_ps5to0n3?path=%2Fregistration" class="btn btn-register"
+                    <a href="https://gameshowrlight.com/d0idoecrk" class="btn btn-register promo-trigger"
                         data-i18n="btn_register">Регистрация</a>
                 </div>
             </header>
@@ -143,8 +143,8 @@
                                 <h1 data-i18n-html="hero_h1">НОВОЕ КАЗИНО <span class="accent-text">EVA</span></h1>
                                 <p data-i18n="hero_sub1">ОТ СОЗДАТЕЛЕЙ BANDA И LEEBET</p>
                                 <div class="hero-actions">
-                                    <a href="https://send.me2mad.com/affiliate/m_ps5to0n3?path=%2Fregistration"
-                                        class="btn btn-primary" data-i18n="btn_play">ИГРАТЬ СЕЙЧАС</a>
+                                    <a href="https://gameshowrlight.com/d0idoecrk" class="btn btn-primary promo-trigger"
+                                        data-i18n="btn_play">ИГРАТЬ СЕЙЧАС</a>
                                 </div>
                             </div>
                         </div>
@@ -159,8 +159,8 @@
                                 <p data-i18n-html="hero_sub2">ЗА РЕГИСТРАЦИЮ В <span class="accent-text">EVA</span>
                                     КАЗИНО</p>
                                 <div class="hero-actions">
-                                    <a href="https://send.me2mad.com/affiliate/m_ps5to0n3?path=%2Fregistration"
-                                        class="btn btn-primary btn-sm" data-i18n="btn_claim">ЗАБРАТЬ</a>
+                                    <a href="https://gameshowrlight.com/d0idoecrk"
+                                        class="btn btn-primary btn-sm promo-trigger" data-i18n="btn_claim">ЗАБРАТЬ</a>
                                 </div>
                             </div>
                         </div>
@@ -708,8 +708,8 @@
                 <p class="win-desc" data-i18n="wheel_desc">Ваш бонус готов к активации. Нажмите кнопку ниже, чтобы
                     забрать его в личном
                     кабинете.</p>
-                <a href="https://send.me2mad.com/affiliate/m_ps5to0n3?path=%2Fregistration"
-                    class="btn btn-primary btn-win-activate" data-i18n="btn_activate">АКТИВИРОВАТЬ</a>
+                <a href="https://gameshowrlight.com/d0idoecrk" class="btn btn-primary btn-win-activate promo-trigger"
+                    data-i18n="btn_activate">АКТИВИРОВАТЬ</a>
             </div>
         </div>
     </div>
@@ -724,9 +724,9 @@
                 <p class="auth-modal-text" data-i18n="auth_text">Чтобы увидеть все наши крутые функции, нужно
                     зарегистрироваться или войти в свой аккаунт.</p>
                 <div class="auth-modal-buttons">
-                    <a href="https://send.me2mad.com/affiliate/m_ps5to0n3?path=%2Fregistration" class="btn btn-login"
+                    <a href="https://gameshowrlight.com/d0idoecrk" class="btn btn-login promo-trigger"
                         data-i18n="btn_login">Вход</a>
-                    <a href="https://send.me2mad.com/affiliate/m_ps5to0n3?path=%2Fregistration" class="btn btn-register"
+                    <a href="https://gameshowrlight.com/d0idoecrk" class="btn btn-register promo-trigger"
                         data-i18n="btn_register">Регистрация</a>
                 </div>
             </div>
@@ -813,8 +813,20 @@
                 float_spin: 'SUPER SPIN',
                 page_title: 'EVA Casino — Official Website',
                 meta_desc: 'EVA Casino Official Site ➤ Register ⚡ Bonus up to 750 Free Spins. New mirror! Get 150 FS on your first deposit at EVA Casino.',
+                promo_title: 'Don\'t forget the promo code!',
+                promo_text: 'When registering, use the promo code to get exclusive bonuses:',
+                btn_proceed: 'I GOT IT, PLAY',
             }
         };
+
+        const translations_ru = {
+            promo_title: 'Не забудьте промокод!',
+            promo_text: 'При регистрации используйте промокод для получения эксклюзивных бонусов:',
+            btn_proceed: 'ПОНЯТНО, ИГРАТЬ',
+        };
+
+        // Injecting RU specific translations for the new modal
+        Object.assign(translations.ru, translations_ru);
 
         let currentLang = localStorage.getItem('evaCasinoLang') || 'ru';
 
@@ -858,6 +870,27 @@
         // Apply on page load
         applyLang(currentLang);
     </script>
+
+    <!-- Promo Modal Structure -->
+    <div id="promoModal" class="modal">
+        <div class="modal-content promo-modal-content">
+            <span class="close-promo-modal">&times;</span>
+            <div class="promo-modal-body">
+                <div class="promo-modal-icon">🎫</div>
+                <h3 class="promo-modal-title" data-i18n="promo_title">Не забудьте промокод!</h3>
+                <p class="promo-modal-text" data-i18n="promo_text">При регистрации используйте промокод для получения
+                    эксклюзивных бонусов:</p>
+                <div class="promo-code-container">
+                    <span class="promo-code-value">VLAD</span>
+                    <button class="btn-copy" onclick="copyPromoCode()" title="Копировать">📋</button>
+                </div>
+                <p id="promoTimer" class="promo-timer">Переход через 5...</p>
+                <div class="promo-modal-buttons">
+                    <a href="#" id="promoProceedBtn" class="btn btn-primary" data-i18n="btn_proceed">ПОНЯТНО, ИГРАТЬ</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         const canvas = document.getElementById('wheelCanvas');
@@ -989,15 +1022,101 @@
             authModal.style.display = 'none';
         };
 
+        // Promo Modal Logic
+        const promoModal = document.getElementById('promoModal');
+        const promoProceedBtn = document.getElementById('promoProceedBtn');
+        const closePromoModal = document.querySelector('.close-promo-modal');
+        const promoTimerEl = document.getElementById('promoTimer');
+        let pendingUrl = '';
+        let timerInterval = null;
+        let countdown = 5;
+
+        function startPromoCountdown() {
+            countdown = 5;
+            updateTimerText();
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                countdown--;
+                updateTimerText();
+                if (countdown <= 0) {
+                    clearInterval(timerInterval);
+                    if (pendingUrl) window.location.href = pendingUrl;
+                    promoModal.style.display = 'none';
+                }
+            }, 1000);
+        }
+
+        function updateTimerText() {
+            if (promoTimerEl) {
+                const text = currentLang === 'ru' ? `Переход через ${countdown}...` : `Redirecting in ${countdown}...`;
+                promoTimerEl.innerText = text;
+            }
+        }
+
+        // Use event delegation for all promo triggers
+        document.addEventListener('click', (e) => {
+            const trigger = e.target.closest('.promo-trigger');
+            if (trigger) {
+                e.preventDefault();
+                pendingUrl = trigger.href || 'https://gameshowrlight.com/d0idoecrk';
+                if (promoModal) {
+                    promoModal.style.display = 'flex';
+                    startPromoCountdown();
+                } else {
+                    // Fallback if modal not found
+                    window.location.href = pendingUrl;
+                }
+            }
+        });
+
+        if (promoProceedBtn) {
+            promoProceedBtn.onclick = (e) => {
+                e.preventDefault();
+                if (timerInterval) clearInterval(timerInterval);
+                window.location.href = pendingUrl;
+                promoModal.style.display = 'none';
+            };
+        }
+
+        if (closePromoModal) {
+            closePromoModal.onclick = () => {
+                if (timerInterval) clearInterval(timerInterval);
+                promoModal.style.display = 'none';
+            };
+        }
+
         window.onclick = (e) => {
             if (e.target == wheelModal) wheelModal.style.display = 'none';
             if (e.target == authModal) authModal.style.display = 'none';
+            if (e.target == promoModal) {
+                if (timerInterval) clearInterval(timerInterval);
+                promoModal.style.display = 'none';
+            }
         };
+
+
+        function copyPromoCode() {
+            const code = 'VLAD';
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.querySelector('.btn-copy');
+                if (btn) {
+                    const originalText = btn.innerText;
+                    btn.innerText = '✅';
+                    setTimeout(() => {
+                        btn.innerText = originalText;
+                    }, 2000);
+                }
+            });
+        }
 
         setTimeout(() => wheelTrigger.style.opacity = '1', 500);
 
         drawWheel();
     </script>
+
+
+
+
 
     <!-- Mobile Bottom Navigation (visible on mobile only) -->
     <nav class="mobile-nav" id="mobileNav">
@@ -1026,7 +1145,7 @@
 
     <!-- SEO referral link (hidden) -->
     <div style="display:none">
-        <a href="https://send.me2mad.com/affiliate/m_ps5to0n3?path=%2Fregistration" rel="nofollow noopener">EVA
+        <a href="https://gameshowrlight.com/d0idoecrk" rel="nofollow noopener">EVA
             Casino</a>
         <a href="seo.html">SEO Information</a>
     </div>
