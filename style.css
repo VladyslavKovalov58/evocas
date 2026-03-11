@@ -1509,6 +1509,40 @@ body {
     opacity: 0.8;
 }
 
+.footer-seo {
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 4rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: color 0.2s;
+    opacity: 0.6;
+}
+
+.footer-links a:hover {
+    color: var(--accent-gold);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .footer-seo {
+        margin-bottom: 80px;
+        /* Space for mobile nav */
+    }
+}
+
 .promo-code-container {
     background: rgba(255, 255, 255, 0.05);
     border: 2px dashed rgba(212, 175, 55, 0.4);
